@@ -5,3 +5,4 @@ db.sqlite3
 __temp_static_root/*
 **/.DS_Store
 .Rhistory
+.vscode
