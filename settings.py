@@ -6,7 +6,7 @@ SESSION_CONFIGS = [
         display_name='Search Experiment (Manual Uncertainty)',
         # app_sequence=['search', 'bret_practice',
         #               'bret', 'mpl', 'demographics'],
-        app_sequence=['search'],
+        app_sequence=['bret_practice', 'bret'],
         num_demo_participants=1,
         value_high=500,
         value_low=100,
