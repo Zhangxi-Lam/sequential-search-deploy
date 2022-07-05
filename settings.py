@@ -2,6 +2,22 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
+        name='search_experiment_control',
+        display_name='Search Experiment (Manual Certainty)',
+        app_sequence=['search', 'bret_practice', 'bret', 'mpl','demographics'],
+        num_demo_participants=1,
+        value_high = 500,
+        value_low = 100,
+        search_cost = 5,
+        lottery_a = 280,
+        lottery_b_hi = 500,
+        lottery_b_lo = 100,
+        random = True,
+        certainty = False,
+        control = True,
+        automatic = False,
+    ),
+    dict(
         name='search_experiment_uncertainty',
         display_name='Search Experiment (Manual Uncertainty)',
         app_sequence=['search', 'bret_practice',
