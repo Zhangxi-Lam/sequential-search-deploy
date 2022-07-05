@@ -57,12 +57,9 @@ REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 
 ROOMS = [
-    dict(name='live_demo',
-         display_name='Room for live demo (no participant labels)'
-         ),
     dict(
-        name='sequential_search',
-        display_name='Sequential Search',
+        name='session_room',
+        display_name='Session Room',
         participant_label_file='_rooms/participant_label.txt',
         # use_secure_urls=True
     ),
