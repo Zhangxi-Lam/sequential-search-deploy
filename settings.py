@@ -2,6 +2,22 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
+        name='search_experiment_control',
+        display_name='Search Experiment (Manual Certainty)',
+        app_sequence=['search', 'bret_practice', 'bret', 'mpl','demographics'],
+        num_demo_participants=1,
+        value_high = 500,
+        value_low = 100,
+        search_cost = 5,
+        lottery_a = 280,
+        lottery_b_hi = 500,
+        lottery_b_lo = 100,
+        random = True,
+        certainty = False,
+        control = True,
+        automatic = False,
+    ),
+    dict(
         name='search_experiment_uncertainty',
         display_name='Search Experiment (Manual Uncertainty)',
         app_sequence=['search', 'bret_practice',
@@ -41,12 +57,9 @@ REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 
 ROOMS = [
-    dict(name='live_demo',
-         display_name='Room for live demo (no participant labels)'
-         ),
     dict(
-        name='sequential_search',
-        display_name='Sequential Search',
+        name='session_room',
+        display_name='Session Room',
         participant_label_file='_rooms/participant_label.txt',
         # use_secure_urls=True
     ),
